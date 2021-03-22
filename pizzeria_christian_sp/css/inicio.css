@@ -1,0 +1,32 @@
+body {
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Mystery Quest", cursive;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.cntr-fts-moto {
+  /* margin-top: 10%; */
+  width: 100%;
+  border: 1px solid black;
+  background: rgb(255, 144, 92);
+}
+
+.fotoMoto {
+  vertical-align: middle;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+span {
+  font-size: 70px;
+}
+
+.cntr-status {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

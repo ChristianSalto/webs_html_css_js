@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papel</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+        background: rgb(181, 247, 181);
+      }
+
+      header {
+        display: flex;
+        background: rgb(0, 0, 0);
+      }
+
+      .title {
+        width: 80%;
+      }
+
+      h1 {
+        color: rgb(4, 170, 4);
+        font-family: fantasy;
+        font-size: 30px;
+        margin-top: 40px;
+        text-shadow: 2px 2px 8px rgb(1, 119, 40);
+      }
+
+      h1.intro {
+        color: rgb(253, 253, 253);
+      }
+
+      .intro {
+        text-align: start;
+        margin: 40px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 0.5px solid gray;
+        margin: 40px;
+        width: 80%;
+      }
+      th {
+        padding: 10px;
+        border: 0.5px solid gray;
+      }
+
+      td {
+        padding: 10px;
+        border: 0.5px solid gray;
+      }
+
+      footer {
+        background: rgb(0, 0, 0);
+        height: 130px;
+        margin-top: 2%;
+        color: azure;
+      }
+
+      footer div {
+        width: 31%;
+        height: 70px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px 1%;
+        overflow: auto;
+      }
+
+      summary {
+        color: rgb(0, 255, 21);
+        outline: none;
+      }
+
+      details {
+        cursor: pointer;
+      }
+
+      .foto-repre {
+        width: 100px;
+        height: 100px;
+      }
+
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+        color: black;
+      }
+
+      .back {
+        text-align: start;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.jpg" alt="" />
+      <div class="title"><h1>GESTION DE RECURSOS</h1></div>
+    </header>
+    <main>
+      <h1 class="intro">¿Porque deberiamos reciclar residuos de papel?</h1>
+      <p class="intro">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst
+        fringilla magnis fusce ultrices vel, potenti donec lobortis curae
+        iaculis volutpat lacus senectus netus eu egestas. Dis orci cras
+        vulputate urna placerat vivamus phasellus donec posuere, libero
+        fringilla penatibus natoque fusce tempus maecenas habitant nostra,
+        varius nullam in lacus parturient mus commodo tincidunt.
+      </p>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">Residuos organicos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Residuos habituales</th>
+              <th>Foto representativa</th>
+              <th>% de reciclado</th>
+              <th>Uso futuro de cada apartado</th>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>
+                <a href="img/papel76.jpg">
+                  <img class="foto-repre" src="img/papel76.jpg" alt="" />
+                </a>
+              </td>
+              <td>80 %</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>
+                <a href="img/papel76.jpg">
+                  <img class="foto-repre" src="img/papel76.jpg" alt="" />
+                </a>
+              </td>
+              <td>75 %</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>
+                <a href="img/papel76.jpg">
+                  <img class="foto-repre" src="img/papel76.jpg" alt="" />
+                </a>
+              </td>
+              <td>65 %</td>
+              <td>Lorem ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem ipsum</td>
+              <td>
+                <a href="img/papel76.jpg">
+                  <img class="foto-repre" src="img/papel76.jpg" alt="" />
+                </a>
+              </td>
+              <td>50 %</td>
+              <td>Lorem ipsum</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="back">
+        <a href="index.html"> &#x25C0; <b>BACK</b> </a>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <details>
+          <summary>Copyright 1999-2018</summary>
+          <p>
+            By McLeon Data, All rights Reserved. All content and graphics on
+            this web site are the property of the company McLeon.
+          </p>
+        </details>
+      </div>
+      <div>
+        <details>
+          <summary>Puedes encontrarnos en:</summary>
+          <address>
+            Madrid - C/ Cerro Nuevo, 23<br />
+            Guadalajara - Avda/ Madrid, 34<br />
+            Ávila - C/ Aguilas, 9
+          </address>
+        </details>
+      </div>
+      <div>
+        <details>
+          <summary>Contactanos en:</summary>
+          <p>
+            Tel: 91.346.55.23<br />
+            mail: planeta@cuida.com
+          </p>
+        </details>
+      </div>
+    </footer>
+  </body>
+</html>

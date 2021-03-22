@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websites de ejemplo</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        text-align: center;
+        font-family: monospace;
+        background: rgb(0, 234, 255);
+      }
+
+      .cntr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cntr a {
+        padding: 10px;
+        font-size: large;
+        text-decoration: none;
+        outline: none;
+        height: 35px;
+        width: 200px;
+        line-height: 40px;
+        margin: 10px;
+        color: rgb(83, 81, 78);
+      }
+
+      .cntr a:hover {
+        color: brown;
+        font-size: 25px;
+      }
+
+      span {
+        vertical-align: middle;
+        font-size: 30px;
+        margin-right: 5px;
+        color: brown;
+      }
+
+      h1 {
+        border-bottom: 1px solid gray;
+        padding: 20px;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        background: blue;
+        height: 100px;
+      }
+
+      footer p {
+        margin-top: 30px;
+        color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enlaces a paginas web de ejemplo</h1>
+    <div class="cntr">
+      <a
+        href="ciudades/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="ciudades" style="display: none">&#10148;</span>Ciudades</a
+      >
+      <a
+        href="energias_christian_sp/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="energias" style="display: none">&#10148;</span>Energias</a
+      >
+      <a
+        href="figuras_geo_christian/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="figuras" style="display: none">&#10148;</span>Figuras geo</a
+      >
+      <a
+        href="pizzeria_christian_sp/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="pizzeria" style="display: none">&#10148;</span>Pizzeria</a
+      >
+      <a
+        href="reciclages_christianSP/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="reciclages" style="display: none">&#10148;</span>Reciclaje</a
+      >
+      <a
+        href="web_elfica/"
+        onmouseover="handelEvent(this)"
+        onmouseout="handelEvent(this)"
+        ><span id="web" style="display: none">&#10148;</span>Web Elfica</a
+      >
+    </div>
+    <footer>
+      <p>© 2021 All rights reserved | Privacity Policy</p>
+    </footer>
+  </body>
+
+  <script>
+    const handelEvent = (element) => {
+      const span = element.childNodes[0];
+      const display = span.style.display;
+
+      span.style.display = display === "none" ? "inline" : "none";
+    };
+  </script>
+</html>

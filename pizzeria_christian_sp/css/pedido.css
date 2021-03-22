@@ -1,0 +1,109 @@
+body {
+  font-family: "Mystery Quest", cursive;
+}
+
+.cnt-pedido {
+  display: flex;
+}
+
+/* h3 {
+  font-family: "Mystery Quest", cursive;
+} */
+
+h1 {
+  margin: 3% 2%;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+}
+
+span {
+  margin-top: 11px;
+  margin-left: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cantidad {
+  width: 25px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+.cnt-pedido div {
+  border: 1px solid black;
+  padding: 25px;
+  width: 30%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.submit {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 2%;
+  background: rgb(143, 33, 0);
+  border-radius: 10px;
+  color: white;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background: rgb(58, 155, 155);
+}
+
+.h3-msj {
+  position: absolute;
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+  margin: 4% 150px;
+}
+
+.cntr-total {
+  display: flex;
+  float: right;
+  margin: 30px 30px;
+  width: 300px;
+}
+
+.total {
+  color: rgb(160, 0, 0);
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.carrito {
+  width: 100px;
+  height: 100px;
+}
+
+.btn-carrito {
+  background: white;
+  border: none;
+  outline: none;
+  margin-left: 70%;
+}
+
+.btn-carrito:hover {
+  cursor: pointer;
+}
+
+.cntr-carrito {
+  display: flex;
+}
+
+div span {
+  color: blue;
+}
+
+.spn-carrito {
+  position: absolute;
+  margin-top: 40px;
+  font-size: 30px;
+  color: black;
+}

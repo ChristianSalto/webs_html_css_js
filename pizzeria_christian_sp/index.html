@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mystery+Quest"
+    />
+    <title>Pizzeria_chris</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="logo" class="logo" />
+      </div>
+      <nav>
+        <input
+          type="button"
+          value="inicio"
+          id="inicio"
+          onclick="handleIframe(document.getElementById('inicio').value)"
+        />
+        <input
+          type="button"
+          value="pedido"
+          id="pedido"
+          onclick="handleIframe(document.getElementById('pedido').value)"
+        />
+        <input
+          type="button"
+          value="proceso"
+          id="proceso"
+          onclick="handleIframe(document.getElementById('proceso').value)"
+        />
+        <!-- <a href="inicio.html">Inicio</a>
+        <a href="pedido.html">Pedido</a>
+        <a href="proceso.html">Proceso</a> -->
+      </nav>
+    </header>
+    <article>
+      <div class="dosxuno">
+        <h1>2 x 1</h1>
+      </div>
+      <div class="galeria"></div>
+      <div class="descuento">
+        <h1>30 &#37</h1>
+        <button onclick="handleDiscount()">Aplicar</button>
+      </div>
+    </article>
+    <main>
+      <iframe src="pedido.html" frameborder="0" id="iframe"></iframe>
+      <!-- <iframe src="pedido.html" frameborder="0"></iframe>
+      <iframe src="proceso.html" frameborder="0"></iframe> -->
+    </main>
+    <section>
+      <div class="cntr-mapa">
+        <div class="mapa">
+          <iframe
+            height="300"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.41275071!2d12.474129415637192!3d41.89855430930762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x445d987625981cf9!2zVmlhIGRlbCBHb3Zlcm5vIFZlY2NoaW8sIDExNCwgMDAxODYgUm9tYSwgUk0sIEl0YWxpYQ==!5e0!3m2!1sen!2sau!4v1471218824160"
+            style="
+              max-width: 100%;
+              width: 100%;
+              border: none;
+              padding: 0px;
+              margin: 0px;
+              height: 400px;
+            "
+          ></iframe>
+        </div>
+
+        <div class="redes-sociales">
+          <div class="ctnr-mano">
+            <h2>Siguenos en redes sociales !!!</h2>
+            <div class="cntr-redes-logos">
+              <img src="img/mano.jpg" alt="mano" class="mano" />
+              <a href="https://www.facebook.com/">
+                <div class="cntr-foto-redes f"></div>
+              </a>
+              <a href="https://www.instagram.com/">
+                <div class="cntr-foto-redes i"></div>
+              </a>
+              <a href="https://twitter.com/">
+                <div class="cntr-foto-redes t"></div>
+              </a>
+              <a href="https://www.linkedin.com/">
+                <div class="cntr-foto-redes l"></div>
+              </a>
+            </div>
+            <h2>y disfruta !!!</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <summary>Copyright 1999-2018</summary>
+        <p>
+          By McLeon Data, All rights Reserved. All content and graphics on this
+          web site are the property of the company McLeon.
+        </p>
+      </div>
+      <div>
+        <summary>Puedes encontrarnos en:</summary>
+        <address>
+          <br />
+          del Governo Vecchio, 114, 00186 Roma RM, Italia
+        </address>
+      </div>
+      <div>
+        <summary>Contactanos en:</summary>
+        <p>
+          Tel: +39 06 686 1617<br />
+          mail: homer@pizza.com
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+  <script src="js/pedido.js"></script>
+</html>

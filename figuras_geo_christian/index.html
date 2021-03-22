@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras Geometricas</title>
+    <style>
+      body,
+      html {
+        margin: inherit;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: radial-gradient(
+          rgb(119, 155, 108),
+          rgb(155, 255, 155),
+          rgb(0, 0, 0)
+        );
+      }
+
+      header {
+        text-align: center;
+        background: black;
+      }
+
+      h1 {
+        color: burlywood;
+      }
+
+      .container {
+        font-family: monospace;
+        padding: 1%;
+      }
+
+      .container div {
+        border-radius: 10px;
+        margin-left: 10%;
+        width: 80%;
+        background: seashell;
+        padding: 1%;
+      }
+
+      h3 {
+        margin-left: 10%;
+        color: rgb(56, 56, 56);
+      }
+
+      input {
+        margin: 1%;
+        width: 80px;
+        height: 30px;
+        padding-left: 1%;
+      }
+
+      span {
+        margin-left: 1%;
+      }
+      button[onclick="borrar()"] {
+        width: 30%;
+        height: 40px;
+        margin: 2% 35%;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background: rgb(0, 117, 20);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Figuras Geometricas:</h1></header>
+    <div class="container">
+      <h3 class="circulo">Circulo</h3>
+      <div class="cntr-figuras">
+        <span>Radio:</span>
+        <input type="number" id="radio" />
+        <button onclick="circulo(document.getElementById('radio').value)">
+          =
+        </button>
+        <input
+          class="input"
+          type="number"
+          placeholder="circunferencia"
+          disabled
+          id="c-value"
+        />
+        <input
+          class="input"
+          type="number"
+          placeholder="area"
+          disabled
+          id="a-value"
+        />
+        <!-- <button onclick="borrar()">C</button> -->
+      </div>
+
+      <h3 class="rectangulo">Rectangulo</h3>
+      <div>
+        <span>Base:</span>
+        <input type="number" id="r-base" />
+        <span>Altura:</span>
+        <input type="number" id="r-altura" />
+        <button
+          onclick="rectangulo(
+          document.getElementById('r-base').value,
+          document.getElementById('r-altura').value)"
+        >
+          =
+        </button>
+        <input
+          type="number"
+          placeholder="perimetro"
+          disabled
+          id="p-r-value"
+          class="input"
+        />
+        <input
+          type="number"
+          placeholder="area"
+          disabled
+          id="a-r-value"
+          class="input"
+        />
+        <!-- <button onclick="borrar()">C</button> -->
+      </div>
+
+      <h3 class="cuadrado">Cuadrado</h3>
+      <div>
+        <span>Lado:</span>
+        <input type="number" id="r-lado" />
+        <button onclick="cuadrado(document.getElementById('r-lado').value)">
+          =
+        </button>
+        <input
+          type="number"
+          placeholder="perimetro"
+          disabled
+          id="p-c-value"
+          class="input"
+        />
+        <input
+          type="number"
+          placeholder="area"
+          disabled
+          id="a-c-value"
+          class="input"
+        />
+        <!-- <button onclick="borrar()">C</button> -->
+      </div>
+
+      <h3 class="triangulo">Triangulo</h3>
+      <div>
+        <span>Base:</span>
+        <input type="number" id="t-base" />
+        <span>Altura:</span>
+        <input type="number" id="t-altura" />
+        <span>Cateto:</span>
+        <input type="number" id="t-cateto" />
+        <button
+          onclick="triangulo(
+          document.getElementById('t-base').value,
+          document.getElementById('t-altura').value,
+          document.getElementById('t-cateto').value
+          )"
+        >
+          =
+        </button>
+        <input
+          type="number"
+          placeholder="perimetro"
+          disabled
+          id="p-t-value"
+          class="input"
+        />
+        <input
+          type="number"
+          placeholder="area"
+          disabled
+          id="a-t-value"
+          class="input"
+        />
+        <!-- <button onclick="borrar()">C</button> -->
+      </div>
+      <button onclick="borrar()">C</button>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>

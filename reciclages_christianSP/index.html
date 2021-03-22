@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reciclages SP</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0;
+        background: rgb(181, 247, 181);
+      }
+
+      header {
+        display: flex;
+        background: rgb(0, 0, 0);
+      }
+
+      .title {
+        width: 80%;
+      }
+
+      h1 {
+        color: rgb(4, 170, 4);
+        font-family: fantasy;
+        font-size: 30px;
+        margin-top: 40px;
+        text-shadow: 2px 2px 8px rgb(1, 119, 40);
+      }
+      main {
+        justify-content: center;
+        border: 25px ridge green;
+        min-width: 950px;
+        margin-top: 2%;
+        display: flex;
+      }
+
+      section {
+        display: inline-block;
+        width: 33%;
+        margin-top: 5%;
+        vertical-align: top;
+        text-align: -webkit-center;
+      }
+
+      a {
+        color: black;
+        padding: 2px;
+        width: 200px;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        text-decoration: none;
+        background-image: linear-gradient(#ff0000, #f2ff42);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+      }
+
+      a:hover,
+      a:focus {
+        background-size: 100% 2px;
+      }
+
+      .foto {
+        display: inline-block;
+        width: 350px;
+        margin: 1%;
+        height: 500px;
+      }
+
+      footer {
+        background: rgb(0, 0, 0);
+        height: 130px;
+        margin-top: 2%;
+        color: azure;
+      }
+
+      footer div {
+        width: 31%;
+        height: 70px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin: 20px 1%;
+        overflow: auto;
+      }
+
+      summary {
+        color: rgb(0, 255, 21);
+        outline: none;
+      }
+
+      details {
+        cursor: pointer;
+      }
+
+      .img-L-R {
+        display: block;
+        margin-top: 20%;
+        border-bottom: 25px ridge green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <span class="logo"> -->
+      <img src="img/logo.jpg" alt="" />
+      <!-- </span> -->
+      <div class="title"><h1>GESTION DE RECURSOS</h1></div>
+    </header>
+    <main>
+      <div class="foto">
+        <img class="img-L-R" src="img/image3.jpg" alt="" />
+        <h2>¿Quienes somos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst
+          fringilla magnis fusce ultrices vel, potenti donec lobortis curae
+          iaculis volutpat lacus senectus netus eu egestas.
+        </p>
+      </div>
+      <section>
+        <a href="organico.html">Residuos organicos</a>
+        <a href="vidrio.html">Envases de vidrio</a>
+        <a href="papel.html">Papel y carton</a>
+        <a href="plastico.html">Latas, plasticos y bricks</a>
+      </section>
+      <div class="foto">
+        <img class="img-L-R" src="img/image4.jpg" alt="" />
+        <h2>¿Que hacemos?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit dictumst
+          fringilla magnis fusce ultrices vel, potenti donec lobortis curae
+          iaculis volutpat lacus senectus netus eu egestas.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <details>
+          <summary>Copyright 1999-2018</summary>
+          <p>
+            By McLeon Data, All rights Reserved. All content and graphics on
+            this web site are the property of the company McLeon.
+          </p>
+        </details>
+      </div>
+      <div>
+        <details>
+          <summary>Puedes encontrarnos en:</summary>
+          <address>
+            Madrid - C/ Cerro Nuevo, 23<br />
+            Guadalajara - Avda/ Madrid, 34<br />
+            Ávila - C/ Aguilas, 9
+          </address>
+        </details>
+      </div>
+      <div>
+        <details>
+          <summary>Contactanos en:</summary>
+          <p>
+            Tel: 91.346.55.23<br />
+            mail: planeta@cuida.com
+          </p>
+        </details>
+      </div>
+    </footer>
+  </body>
+</html>

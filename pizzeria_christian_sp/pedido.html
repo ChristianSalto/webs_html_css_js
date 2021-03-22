@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/pedido.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mystery+Quest"
+    />
+    <title>Pedido</title>
+  </head>
+  <body>
+    <div class="cntr-carrito">
+      <h1>pedido :</h1>
+      <h3 class="h3-msj"></h3>
+      <a href="carrito.html" class="btn-carrito">
+        <img src="img/carrito.jpg" alt="carrito" class="carrito" />
+        <span class="spn-carrito" id="spn-carrito">0</span>
+      </a>
+    </div>
+    <form>
+      <div class="cnt-pedido">
+        <div>
+          <h3>Nuestras pizzas</h3>
+          <input type="checkbox" id="haw" value="16.95" name="hawaiana" />
+          <label for="haw">hawaiana</label><span>&#10146;</span>
+          <span>16,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-0"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="carbo" value="16.95" name="carbonara" />
+          <label for="carbo">carbonara</label><span>&#10146;</span>
+          <span>16,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-1"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="bar" value="16.95" name="barbacoa" />
+          <label for="bar">barbacoa</label><span>&#10146;</span>
+          <span>16,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-2"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="pepe" value="16.95" name="peperoni" />
+          <label for="pepe">peperoni</label><span>&#10146;</span>
+          <span>16,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-3"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="pata" value="18.95" name="patanegra" />
+          <label for="pata">patanegra</label><span>&#10146;</span>
+          <span>18,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-4"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="veg" value="16.95" name="vegetal" />
+          <label for="veg">vegetal</label><span>&#10146;</span>
+          <span>16,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-5"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+        </div>
+        <div>
+          <h3>Nuestras bebidas</h3>
+          <input type="checkbox" id="coca" value="2" name="coca-cola" />
+          <label for="coca">coca-cola</label><span>&#10146;</span>
+          <span>2 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-6"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="fanta-n" value="2" name="fanta naranja" />
+          <label for="fanta-n">fanta-naranja</label><span>&#10146;</span>
+          <span>2 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-7"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="fanta-l" value="2" name="fanta limon" />
+          <label for="fanta-l">fanta-limon</label><span>&#10146;</span>
+          <span>2 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-8"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="cerve" value="1.50" name="cerveza" />
+          <label for="cerve">cerveza</label><span>&#10146;</span>
+          <span>1,50 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-9"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+        </div>
+
+        <div>
+          <h3>Nuestros postres</h3>
+          <input type="checkbox" id="hela" value="2.95" name="helado" />
+          <label for="hela">helado</label><span>&#10146;</span>
+          <span>2,95 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-10"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="brown" value="3.50" name="brownie" />
+          <label for="brown">brownie</label><span>&#10146;</span>
+          <span>3,50 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-11"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+
+          <input type="checkbox" id="tarta" value="2" name="tarta de la casa" />
+          <label for="tarta">tarta de la casa</label><span>&#10146;</span>
+          <span>2 €</span><span>&#10146; </span>
+          <input
+            type="number"
+            id="c-12"
+            class="cantidad"
+            min="1"
+            max="5"
+          /><br />
+        </div>
+      </div>
+
+      <input
+        type="button"
+        onclick="handleForm()"
+        value="Añadir"
+        class="submit"
+      />
+      <div class="cntr-total">
+        <h1>Total:</h1>
+        <span class="total" id="total"></span>
+      </div>
+    </form>
+  </body>
+  <script src="js/pedido.js"></script>
+</html>

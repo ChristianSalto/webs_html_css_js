@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Portafolios Elfico</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&family=Akaya+Telivigala&family=MedievalSharp&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html">
+          <figure>
+            <img src="img/elfoOscuro.jpg" alt="" />
+          </figure>
+        </a>
+        <a href="index.html">El Santuario Elfico</a>
+      </h1>
+
+      <nav id="ioMenu">
+        <div id="showMenu" class="ioMenuMovil" onclick="handleMenu()">
+          <span class="icon-menu3"></span>
+        </div>
+
+        <div id="card_menu">
+          <div id="hideMenu" class="ioMenuMovil" onclick="handleMenu()">
+            <span class="icon-menu4"></span>
+          </div>
+          <figure class="ioMenuMovil">
+            <figcaption>En la oscuridad</figcaption>
+            <img src="img/guerreroFusion2.png" alt="" />
+          </figure>
+          <ul>
+            <li><a onclick="navSection('p1')" href="#">enlace 1</a></li>
+            <li><a onclick="navSection('p2')" href="#">enlace 2</a></li>
+            <li><a onclick="navSection('p3')" href="#">enlace 3</a></li>
+            <li><a onclick="navSection('p4')" href="#">enlace 4</a></li>
+            <li><a onclick="navSection('p5')" href="#">enlace 5</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="prev_section" onclick="handleSections('prev')">
+        <span class="icon-circle-left"></span>
+      </div>
+      <div id="next_section" onclick="handleSections('next')">
+        <span class="icon-circle-right"></span>
+      </div>
+    </header>
+
+    <div id="slider">
+      <!------------------------------------>
+
+      <section class="slide" id="p1" style="display: block">
+        <div class="background-container">
+          <img
+            id="img-moon"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png"
+            alt=""
+          />
+          <div class="stars"></div>
+          <div class="twinkling"></div>
+          <div class="clouds"></div>
+        </div>
+
+        <div class="main_logo">
+          <h2>Soy un <strong>Elfo Oscuro</strong></h2>
+          <figure>
+            <img src="img/paisajeOscuro2.png" alt="" />
+          </figure>
+        </div>
+        <div class="buttons_main">
+          <div id="who" onclick="handleFormMessge('block')">Quien eres?</div>
+          <a href="docs/CV-PRO-2021.pdf" target="_blank">CV Elfico</a>
+        </div>
+      </section>
+
+      <!------------------------------------>
+
+      <section class="slide" id="p2" style="display: none">
+        <h1>Skills Elfico</h1>
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/java.jpeg" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>60%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/JavaScript.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>70%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/php.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 40%"
+              aria-valuenow="40"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>40%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/html.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>70%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/css.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>70%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/node.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>50%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/react.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>50%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/git.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 30%"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>30%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/basedatos.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 30%"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>30%</strong>
+            </div>
+          </div>
+        </div>
+
+        <div id="cntr-progress">
+          <figure>
+            <img src="img/logo_skills/visual.png" alt="" />
+          </figure>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <strong>90%</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------>
+      <section class="slide" id="p3" style="display: none">
+        <h1>En proceso de creacion.....</h1>
+      </section>
+      <section class="slide" id="p4" style="display: none">
+        <h1>En proceso de creacion.....</h1>
+      </section>
+      <section class="slide" id="p5" style="display: none">
+        <h1>En proceso de creacion.....</h1>
+      </section>
+    </div>
+
+    <div id="cntr_form">
+      <form action="contactoElfico.php" id="form" name="form" method="POST">
+        <div id="close_form" onclick="handleFormMessge('none')">
+          <b>&#88;</b>
+        </div>
+        <figure id="logo_msj">
+          <img src="img/elfo.png" alt="" />
+        </figure>
+        <p>¿Quien eres...?</p>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Tu nombre"
+          onfocus="if(this.placeholder = '') this.placeholder= 'Tu nombre'"
+        />
+
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Tu email"
+          onfocus="if(this.placeholder = '') this.placeholder= 'Tu nombre'"
+        />
+
+        <textarea
+          name="message"
+          id="message"
+          name="message"
+          placeholder="Tu message"
+          onfocus="if(this.placeholder = '') this.placeholder= 'Tu message'"
+        ></textarea>
+
+        <input type="submit" name="submit" id="sub" value="ENVIAR" />
+      </form>
+    </div>
+    <div id="contact_button" onclick="handleFormMessge('block')">
+      <figure>
+        <img src="img/correo.png" alt="" />
+      </figure>
+    </div>
+
+    <footer onmouseleave="handleArrowUp()" onmouseenter="handleArrowDown()">
+      <div class="flecha" id="arrow">&#8963;</div>
+      <div class="cntr-redes-logos">
+        <a href="https://www.facebook.com/">
+          <div class="cntr-foto-redes f"></div>
+        </a>
+        <a href="https://www.instagram.com/">
+          <div class="cntr-foto-redes i"></div>
+        </a>
+        <a href="https://twitter.com/">
+          <div class="cntr-foto-redes t"></div>
+        </a>
+        <a href="https://www.linkedin.com/">
+          <div class="cntr-foto-redes l"></div>
+        </a>
+      </div>
+      <p>© 2021 All rights reserved | Privacity Policy</p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/modernizr.js"></script>
+  </body>
+</html>
